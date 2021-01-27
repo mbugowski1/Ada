@@ -41,7 +41,10 @@ void print()
 void pull()
 {
     if(!querry)
+    {
+        cout << "x";
         return;
+    }
     cout << querry->key;
     fifo *control = querry;
     querry = querry->next;
